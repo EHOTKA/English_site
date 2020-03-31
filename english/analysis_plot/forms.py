@@ -2,7 +2,7 @@ from django import forms
 
 
 class PostForm(forms.Form):
-	field = ('title', 'text',)
+	analysText = forms.CharField(max_length=200)
 
 
 '''from .models import Post

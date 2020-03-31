@@ -2,10 +2,11 @@
 
 
 {% block content %}
-	
+
 	<h1>Найти в тексте незнакомые слова</h1>
 	<form method="POST" class="post-form">{% csrf_token %}
-		{{form.as_p}}
+		<textarea rows="15" cols="45" id="analysText" type="text" name="analysText"></textarea>
+		<br>
 		<button type="submit" class="save btn btn-default">START</button>
 	</form>	
 {% endblock %}
