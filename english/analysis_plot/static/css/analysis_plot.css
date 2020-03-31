@@ -22,7 +22,7 @@
 .menu-main li: last-child: after {content: none;}
 
 
-.menu-main a {
+.menu-main a, #footer a {
 	text-decoration: none;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	letter-spacing: 2px;
@@ -61,4 +61,31 @@
 	padding: 25px 0 20px;
 	margin: 0 30px;
 }
+}
+
+#footer {
+	background: #969287;
+	color: #fff;
+	font-size: 70%;
+	padding: 5px; clear: both;
+	margin: 0 15% 0 15%;
+	border-radius: 20px;
+}
+
+#footer a {
+	color: #68a4cc;
+	text-shadow: black 1px 1px 2px;
+}
+
+#footer a:hover {
+	color: #feb386;
+}
+
+#footer p {
+	padding: 2px;
+	text-align: center;
+}
+
+.clearfloat{
+	clear: both;
 }

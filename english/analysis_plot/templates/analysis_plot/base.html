@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>English site</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/analysis_plot.css' %}">
+</head>
+<body>
+	<div class="header">
+		<div class="">
+			<ul class="menu-main">
+				<li><a href="{% url 'index' %}" class="current">Главная</a></li>
+				<li><a href="{% url 'analys' %}">Проверка</a></li>
+				<li><a href="">Мои слова</a></li>
+				<li><a href="">О Нас</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content conteiner">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	<div id= "footer" >
+		<p>Главная <a href= «#»> Рейтинги </a> | <a href= «#»>Аналитика</a> | <a href= «#» >О нас</a> </p>
+		<p>Copyright © 2020. Сайт об электронном правительстве </p>
+	</div>
+</body>
+</html>
